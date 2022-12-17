@@ -5,7 +5,7 @@ Einfaches Python-Skript zum Verschriflichen aller Videos eines Youtube-Channels.
 - Nutzt die Library [youtube-dl](https://github.com/ytdl-org/youtube-dl), um eine Liste der Videos des Kanals zu erstellen. 
 - Speichert diese Liste mit einigen Infos zu den Videos (Uploaddatum, Views, Länge) als Excel-Datei im Google-Drive des Nutzers ab. 
 - Versucht dann mit youtube-dl, diese Videos nach und nach herunterzuladen und gleich in ein MP3 zu wandeln. (Die Videodatei wird aus Platzgründen weggeworfen.)
-- Wandelt dann mit der OpenAI-KI-Bibliothek whisper die Audios in Textdateien um.
+- Wandelt dann mit der OpenAI-KI-Bibliothek [whisper](https://github.com/openai/whisper) die Audios in Textdateien um.
 
 ## Wie man es ausführt
 
