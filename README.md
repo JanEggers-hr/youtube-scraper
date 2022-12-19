@@ -14,7 +14,6 @@ Einfaches Python-Skript zum Verschriflichen aller Videos eines Youtube-Channels.
 - In den dritten Code-Zelle die URL des Ziels eintragen, z.B. so: ```channel_url = "www.youtube.com/@channelname"``` (siehe auch unten: Notizen)
 - Im Colab-Menü unter "Laufzeit/Laufzeittyp ändern" die GPU einschalten - davon profitiert die Speech-to-text-Umwandlung enorm
 - Alle Code-Zellen nacheinander ausführen. Dem Colab auf Anfrage den Zugriff auf das Google-Drive freigeben - es legt dort einen Ordner ```/youtube-scraper/output``` an. 
-- Ab und zu nachschauen und ggf. die Download-Zelle nochmal anstoßen - ab und zu wirft Youtube dem Download einen Fehler in den Weg, dann einfach nochmal versuchen. 
 
 ## Notizen
 
@@ -22,3 +21,4 @@ Einfaches Python-Skript zum Verschriflichen aller Videos eines Youtube-Channels.
 - youtube-dl ist sehr großzügig und akzeptiert Youtube-Adressen in allerlei Form: Playlisten, Channel-Namen, URLs von einzelnen Videos. Das Skript kann zwar aus einzelnen Videos keine Liste von Videos erstellen, der Download funktioniert aber trotzdem. 
 - Daran denken: Das Skript kann keine Videos finden, die der Ersteller auf "Nicht gelistet" gestellt hat. (Technisch ist das, was als Kanal-Videos angezeigt wird, eine Playlist aller "Öffentlich"-Videos.) Einzelne "Nicht gelistet"-Videos, die man über Links gefunden hat, muss man sich einzeln über diesen Link dazuholen. 
 - Das Skript legt im Google Drive der Nutzerin einen Ordner ```/youtube-scraper/output``` an. Dort finden sich die MP3-Dateien, die Transkripte als .txt-Dateien, und die Liste der Videos als .xlsx. Wenn das Skript durch ist: den Ordner am besten einfach umbenennen. 
+- Wenn das Skript beim Download eines Videos scheitert - was immer mal wieder vorkommt - versucht es herauszufinden, welche Videos noch offen sind, und startet den Download für diese Videos nochmal. Wenn irgendwas Grundlegendes schief läuft. führt das erst nach einigen hundert Versuchen zum Abbruch. 
