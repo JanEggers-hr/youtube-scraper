@@ -1,11 +1,12 @@
 # youtube-scraper
-Einfaches Python-Skript zum Verschriflichen aller Videos eines Youtube-Channels.
+Einfaches Python-Skript zum Verschriflichen aller Videos eines Youtube-Channels. Wer einen API-Key von Aleph Alpha nutzt, kann sich eine KI-generierte Inhaltsübersicht erstellen lassen. 
 
 ## Was es tut
 - Nutzt die Library [youtube-dl](https://github.com/ytdl-org/youtube-dl), um eine Liste der Videos des Kanals zu erstellen. 
 - Speichert diese Liste mit einigen Infos zu den Videos (Uploaddatum, Views, Länge) als Excel-Datei im Google-Drive des Nutzers ab. 
 - Versucht dann mit youtube-dl, diese Videos nach und nach herunterzuladen und gleich in ein MP3 zu wandeln. (Die Videodatei wird aus Platzgründen weggeworfen.)
 - Wandelt dann mit der OpenAI-KI-Bibliothek [whisper](https://github.com/openai/whisper) die Audios in Textdateien um.
+- Nutzt dann den (kostenpflichtigen) Service von [Aleph Alpha](https://www.aleph-alpha.com), um den Text automatisiert in Stichpunkte zusammenzufassen
 
 ## Wie man es ausführt
 
