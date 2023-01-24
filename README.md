@@ -1,4 +1,4 @@
-# youtube-scraper v05
+# youtube-scraper v06
 
 Einfaches Python-Skript zum Verschriftlichen aller Videos eines Youtube-Channels. Wer einen API-Key von Aleph Alpha nutzt, kann sich eine KI-generierte Inhaltsübersicht erstellen lassen. / *A simple Python Notebook that turns all videos in a channel to transcripts. If you have an API key for the Aleph Alpha LLM, you can get an AI-generated summary as well.*
 
@@ -6,8 +6,8 @@ Einfaches Python-Skript zum Verschriftlichen aller Videos eines Youtube-Channels
 
 - Braucht: Ein Google-Konto (für die Verbindung mit einem Google Drive und für die Colab-Nutzung) / *User needs: a Google account (for using Google Colab, and a Google Drive as storage)*
 - Die [Notebook-Seite in diesem Repository](https://github.com/JanEggers-hr/youtube-scraper/blob/main/youtube_scraper.ipynb) ansteuern und auf "Open in Colab" klicken / *Click "Open in Colab" in the [Notebook](https://github.com/JanEggers-hr/youtube-scraper/blob/main/youtube_scraper.ipynb)*
-- In den dritten Code-Zelle die URL des Ziels und Ausgabe-Ordner eintragen / *Change target channel's URL and output folder in the first code cell* ```channel_url = "www.youtube.com/@channelname"```
 - Im Colab-Menü unter "Laufzeit/Laufzeittyp ändern" die GPU einschalten - davon profitiert die Speech-to-text-Umwandlung enorm /* **Switch the Runtime type to GPU in the Runtime menu - speeds up speech-to-text conversion immensely** *
+- Die erste Code-Zelle durch einen Klick auf das Play-Symbol ausführen - sie fragt nach der Ziel-Playlist bzw. dem Ziel-@channel / Execute the first code cell by clicking the play button next to it - it will ask for the target playlist or @channel
 - Alle Code-Zellen nacheinander ausführen. Dem Colab auf Anfrage den Zugriff auf das Google-Drive freigeben - es legt dort einen Ordner ```/youtube-scraper/output``` an. 
 
 ## Was es tut / *What it does*
